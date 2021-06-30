@@ -1,0 +1,1336 @@
+{
+    "211": {
+        "turn": 2,
+        "computer's positions": [],
+        "player's positions": [
+            [
+                1,
+                1
+            ]
+        ],
+        "possible moves": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                1
+            ],
+            [
+                0,
+                2
+            ],
+            [
+                1,
+                0
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                2,
+                0
+            ],
+            [
+                2,
+                1
+            ],
+            [
+                2,
+                2
+            ]
+        ]
+    },
+    "4221120": {
+        "turn": 4,
+        "computer's positions": [
+            [
+                2,
+                2
+            ]
+        ],
+        "player's positions": [
+            [
+                1,
+                1
+            ],
+            [
+                2,
+                0
+            ]
+        ],
+        "possible moves": [
+            [
+                0,
+                2
+            ]
+        ]
+    },
+    "60222111220": {
+        "turn": 6,
+        "computer's positions": [
+            [
+                0,
+                2
+            ],
+            [
+                2,
+                2
+            ]
+        ],
+        "player's positions": [
+            [
+                1,
+                1
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                2,
+                0
+            ]
+        ],
+        "possible moves": [
+            [
+                1,
+                0
+            ]
+        ]
+    },
+    "802102211122021": {
+        "turn": 8,
+        "computer's positions": [
+            [
+                0,
+                2
+            ],
+            [
+                1,
+                0
+            ],
+            [
+                2,
+                2
+            ]
+        ],
+        "player's positions": [
+            [
+                1,
+                1
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                2,
+                0
+            ],
+            [
+                2,
+                1
+            ]
+        ],
+        "possible moves": [
+            [
+                0,
+                1
+            ]
+        ]
+    },
+    "200": {
+        "turn": 2,
+        "computer's positions": [],
+        "player's positions": [
+            [
+                0,
+                0
+            ]
+        ],
+        "possible moves": [
+            [
+                0,
+                1
+            ],
+            [
+                0,
+                2
+            ],
+            [
+                1,
+                0
+            ],
+            [
+                1,
+                1
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                2,
+                0
+            ],
+            [
+                2,
+                1
+            ],
+            [
+                2,
+                2
+            ]
+        ]
+    },
+    "4100022": {
+        "turn": 4,
+        "computer's positions": [
+            [
+                1,
+                0
+            ]
+        ],
+        "player's positions": [
+            [
+                0,
+                0
+            ],
+            [
+                2,
+                2
+            ]
+        ],
+        "possible moves": [
+            [
+                1,
+                1
+            ]
+        ]
+    },
+    "61011001222": {
+        "turn": 6,
+        "computer's positions": [
+            [
+                1,
+                0
+            ],
+            [
+                1,
+                1
+            ]
+        ],
+        "player's positions": [
+            [
+                0,
+                0
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                2,
+                2
+            ]
+        ],
+        "possible moves": [
+            [
+                0,
+                2
+            ]
+        ]
+    },
+    "802101100122022": {
+        "turn": 8,
+        "computer's positions": [
+            [
+                0,
+                2
+            ],
+            [
+                1,
+                0
+            ],
+            [
+                1,
+                1
+            ]
+        ],
+        "player's positions": [
+            [
+                0,
+                0
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                2,
+                0
+            ],
+            [
+                2,
+                2
+            ]
+        ],
+        "possible moves": [
+            [
+                2,
+                1
+            ]
+        ]
+    },
+    "202": {
+        "turn": 2,
+        "computer's positions": [],
+        "player's positions": [
+            [
+                0,
+                2
+            ]
+        ],
+        "possible moves": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                1
+            ],
+            [
+                1,
+                0
+            ],
+            [
+                1,
+                1
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                2,
+                0
+            ],
+            [
+                2,
+                1
+            ],
+            [
+                2,
+                2
+            ]
+        ]
+    },
+    "4010222": {
+        "turn": 4,
+        "computer's positions": [
+            [
+                0,
+                1
+            ]
+        ],
+        "player's positions": [
+            [
+                0,
+                2
+            ],
+            [
+                2,
+                2
+            ]
+        ],
+        "possible moves": [
+            [
+                1,
+                2
+            ]
+        ]
+    },
+    "60112022022": {
+        "turn": 6,
+        "computer's positions": [
+            [
+                0,
+                1
+            ],
+            [
+                1,
+                2
+            ]
+        ],
+        "player's positions": [
+            [
+                0,
+                2
+            ],
+            [
+                2,
+                0
+            ],
+            [
+                2,
+                2
+            ]
+        ],
+        "possible moves": []
+    },
+    "4220211": {
+        "turn": 4,
+        "computer's positions": [
+            [
+                2,
+                2
+            ]
+        ],
+        "player's positions": [
+            [
+                0,
+                2
+            ],
+            [
+                1,
+                1
+            ]
+        ],
+        "possible moves": [
+            [
+                2,
+                0
+            ]
+        ]
+    },
+    "62022021121": {
+        "turn": 6,
+        "computer's positions": [
+            [
+                2,
+                0
+            ],
+            [
+                2,
+                2
+            ]
+        ],
+        "player's positions": [
+            [
+                0,
+                2
+            ],
+            [
+                1,
+                1
+            ],
+            [
+                2,
+                1
+            ]
+        ],
+        "possible moves": [
+            [
+                0,
+                1
+            ]
+        ]
+    },
+    "801202200021121": {
+        "turn": 8,
+        "computer's positions": [
+            [
+                0,
+                1
+            ],
+            [
+                2,
+                0
+            ],
+            [
+                2,
+                2
+            ]
+        ],
+        "player's positions": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                2
+            ],
+            [
+                1,
+                1
+            ],
+            [
+                2,
+                1
+            ]
+        ],
+        "possible moves": [
+            [
+                1,
+                0
+            ],
+            [
+                1,
+                2
+            ]
+        ]
+    },
+    "220": {
+        "turn": 2,
+        "computer's positions": [],
+        "player's positions": [
+            [
+                2,
+                0
+            ]
+        ],
+        "possible moves": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                1
+            ],
+            [
+                0,
+                2
+            ],
+            [
+                1,
+                0
+            ],
+            [
+                1,
+                1
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                2,
+                1
+            ],
+            [
+                2,
+                2
+            ]
+        ]
+    },
+    "4210220": {
+        "turn": 4,
+        "computer's positions": [
+            [
+                2,
+                1
+            ]
+        ],
+        "player's positions": [
+            [
+                0,
+                2
+            ],
+            [
+                2,
+                0
+            ]
+        ],
+        "possible moves": [
+            [
+                1,
+                1
+            ]
+        ]
+    },
+    "61121010220": {
+        "turn": 6,
+        "computer's positions": [
+            [
+                1,
+                1
+            ],
+            [
+                2,
+                1
+            ]
+        ],
+        "player's positions": [
+            [
+                0,
+                1
+            ],
+            [
+                0,
+                2
+            ],
+            [
+                2,
+                0
+            ]
+        ],
+        "possible moves": [
+            [
+                0,
+                0
+            ]
+        ]
+    },
+    "800112101022022": {
+        "turn": 8,
+        "computer's positions": [
+            [
+                0,
+                0
+            ],
+            [
+                1,
+                1
+            ],
+            [
+                2,
+                1
+            ]
+        ],
+        "player's positions": [
+            [
+                0,
+                1
+            ],
+            [
+                0,
+                2
+            ],
+            [
+                2,
+                0
+            ],
+            [
+                2,
+                2
+            ]
+        ],
+        "possible moves": [
+            [
+                1,
+                2
+            ]
+        ]
+    },
+    "201": {
+        "turn": 2,
+        "computer's positions": [],
+        "player's positions": [
+            [
+                0,
+                1
+            ]
+        ],
+        "possible moves": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                2
+            ],
+            [
+                1,
+                0
+            ],
+            [
+                1,
+                1
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                2,
+                0
+            ],
+            [
+                2,
+                1
+            ],
+            [
+                2,
+                2
+            ]
+        ]
+    },
+    "4200001": {
+        "turn": 4,
+        "computer's positions": [
+            [
+                2,
+                0
+            ]
+        ],
+        "player's positions": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                1
+            ]
+        ],
+        "possible moves": [
+            [
+                0,
+                2
+            ]
+        ]
+    },
+    "60220000111": {
+        "turn": 6,
+        "computer's positions": [
+            [
+                0,
+                2
+            ],
+            [
+                2,
+                0
+            ]
+        ],
+        "player's positions": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                1
+            ],
+            [
+                1,
+                1
+            ]
+        ],
+        "possible moves": []
+    },
+    "1": {
+        "turn": 1,
+        "computer's positions": [],
+        "player's positions": [],
+        "possible moves": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                1
+            ],
+            [
+                0,
+                2
+            ],
+            [
+                1,
+                0
+            ],
+            [
+                1,
+                1
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                2,
+                0
+            ],
+            [
+                2,
+                1
+            ],
+            [
+                2,
+                2
+            ]
+        ]
+    },
+    "30222": {
+        "turn": 3,
+        "computer's positions": [
+            [
+                0,
+                2
+            ]
+        ],
+        "player's positions": [
+            [
+                2,
+                2
+            ]
+        ],
+        "possible moves": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                1
+            ],
+            [
+                1,
+                0
+            ],
+            [
+                1,
+                1
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                2,
+                0
+            ],
+            [
+                2,
+                1
+            ]
+        ]
+    },
+    "502211122": {
+        "turn": 5,
+        "computer's positions": [
+            [
+                0,
+                2
+            ],
+            [
+                2,
+                1
+            ]
+        ],
+        "player's positions": [
+            [
+                1,
+                1
+            ],
+            [
+                2,
+                2
+            ]
+        ],
+        "possible moves": [
+            [
+                0,
+                0
+            ]
+        ]
+    },
+    "7000221011122": {
+        "turn": 7,
+        "computer's positions": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                2
+            ],
+            [
+                2,
+                1
+            ]
+        ],
+        "player's positions": [
+            [
+                0,
+                1
+            ],
+            [
+                1,
+                1
+            ],
+            [
+                2,
+                2
+            ]
+        ],
+        "possible moves": [
+            [
+                1,
+                0
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                2,
+                0
+            ]
+        ]
+    },
+    "90002102101112022": {
+        "turn": 9,
+        "computer's positions": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                2
+            ],
+            [
+                1,
+                0
+            ],
+            [
+                2,
+                1
+            ]
+        ],
+        "player's positions": [
+            [
+                0,
+                1
+            ],
+            [
+                1,
+                1
+            ],
+            [
+                2,
+                0
+            ],
+            [
+                2,
+                2
+            ]
+        ],
+        "possible moves": [
+            [
+                1,
+                2
+            ]
+        ]
+    },
+    "32111": {
+        "turn": 3,
+        "computer's positions": [
+            [
+                2,
+                1
+            ]
+        ],
+        "player's positions": [
+            [
+                1,
+                1
+            ]
+        ],
+        "possible moves": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                1
+            ],
+            [
+                0,
+                2
+            ],
+            [
+                1,
+                0
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                2,
+                0
+            ],
+            [
+                2,
+                2
+            ]
+        ]
+    },
+    "500211112": {
+        "turn": 5,
+        "computer's positions": [
+            [
+                0,
+                0
+            ],
+            [
+                2,
+                1
+            ]
+        ],
+        "player's positions": [
+            [
+                1,
+                1
+            ],
+            [
+                1,
+                2
+            ]
+        ],
+        "possible moves": [
+            [
+                1,
+                0
+            ]
+        ]
+    },
+    "7001021111220": {
+        "turn": 7,
+        "computer's positions": [
+            [
+                0,
+                0
+            ],
+            [
+                1,
+                0
+            ],
+            [
+                2,
+                1
+            ]
+        ],
+        "player's positions": [
+            [
+                1,
+                1
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                2,
+                0
+            ]
+        ],
+        "possible moves": [
+            [
+                0,
+                2
+            ]
+        ]
+    },
+    "90002102101111220": {
+        "turn": 9,
+        "computer's positions": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                2
+            ],
+            [
+                1,
+                0
+            ],
+            [
+                2,
+                1
+            ]
+        ],
+        "player's positions": [
+            [
+                0,
+                1
+            ],
+            [
+                1,
+                1
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                2,
+                0
+            ]
+        ],
+        "possible moves": [
+            [
+                2,
+                2
+            ]
+        ]
+    },
+    "4000102": {
+        "turn": 4,
+        "computer's positions": [
+            [
+                0,
+                0
+            ]
+        ],
+        "player's positions": [
+            [
+                0,
+                1
+            ],
+            [
+                0,
+                2
+            ]
+        ],
+        "possible moves": [
+            [
+                1,
+                0
+            ],
+            [
+                1,
+                1
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                2,
+                0
+            ],
+            [
+                2,
+                1
+            ],
+            [
+                2,
+                2
+            ]
+        ]
+    },
+    "60020010210": {
+        "turn": 6,
+        "computer's positions": [
+            [
+                0,
+                0
+            ],
+            [
+                2,
+                0
+            ]
+        ],
+        "player's positions": [
+            [
+                0,
+                1
+            ],
+            [
+                0,
+                2
+            ],
+            [
+                1,
+                0
+            ]
+        ],
+        "possible moves": [
+            [
+                1,
+                1
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                2,
+                1
+            ],
+            [
+                2,
+                2
+            ]
+        ]
+    },
+    "800202101021022": {
+        "turn": 8,
+        "computer's positions": [
+            [
+                0,
+                0
+            ],
+            [
+                2,
+                0
+            ],
+            [
+                2,
+                1
+            ]
+        ],
+        "player's positions": [
+            [
+                0,
+                1
+            ],
+            [
+                0,
+                2
+            ],
+            [
+                1,
+                0
+            ],
+            [
+                2,
+                2
+            ]
+        ],
+        "possible moves": [
+            [
+                1,
+                2
+            ]
+        ]
+    },
+    "4220010": {
+        "turn": 4,
+        "computer's positions": [
+            [
+                2,
+                2
+            ]
+        ],
+        "player's positions": [
+            [
+                0,
+                0
+            ],
+            [
+                1,
+                0
+            ]
+        ],
+        "possible moves": [
+            [
+                2,
+                0
+            ]
+        ]
+    },
+    "62022001021": {
+        "turn": 6,
+        "computer's positions": [
+            [
+                2,
+                0
+            ],
+            [
+                2,
+                2
+            ]
+        ],
+        "player's positions": [
+            [
+                0,
+                0
+            ],
+            [
+                1,
+                0
+            ],
+            [
+                2,
+                1
+            ]
+        ],
+        "possible moves": [
+            [
+                0,
+                1
+            ],
+            [
+                0,
+                2
+            ],
+            [
+                1,
+                1
+            ],
+            [
+                1,
+                2
+            ]
+        ]
+    },
+    "222": {
+        "turn": 2,
+        "computer's positions": [],
+        "player's positions": [
+            [
+                2,
+                2
+            ]
+        ],
+        "possible moves": [
+            [
+                0,
+                0
+            ],
+            [
+                0,
+                1
+            ],
+            [
+                0,
+                2
+            ],
+            [
+                1,
+                0
+            ],
+            [
+                1,
+                1
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                2,
+                0
+            ],
+            [
+                2,
+                1
+            ]
+        ]
+    }
+}
