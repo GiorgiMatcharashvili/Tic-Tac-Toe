@@ -152,168 +152,69 @@ def interact(coordinates):
 ########################################################################################################################
 
 class AI:
-    def __init__(self):
-        self.turn = 0
-        self.get_moves()
-        self.moves_which_i_did = {}
-
-    def get_moves(self):
-        with open("moves.json", ) as f:
-            self.moves = json.load(f)
-
-    def set_moves(self):
-        with open('moves.json', 'w') as f:
-            json.dump(self.moves, f, indent=4, separators=None)
-
-    def position_filter(self,my_list):
-        ban_list = []
-        players_set = set()
-        test_env = dict(coordinates_into_XorO)
-
-        # Check if computer can win at first turn
-        for coordinates in my_list:
-            test_env[coordinates] = OPPONENT
-            result = check(test_env)
-            if result:
-                if OPPONENT in result:
-                    return [coordinates]
-                elif "Draw" in result:
-                    return [coordinates]
-            else:
-                # Check if Player can win at second turn
-                for second_c in self.generate_possible_moves(test_env):
-                    test_env[second_c] = PLAYER
-                    result2 = check(test_env)
-                    if result2:
-                        if PLAYER in result2:
-                            ban_list.append(coordinates)
-                    test_env[second_c] = None
-
-            test_env = dict(coordinates_into_XorO)
-        for banned in ban_list:
-            if banned in my_list:
-                my_list.remove(banned)
-        return my_list
-
-
-
-
-    def play(self):
-        if self.get_player_positions()==[]:
-            self.turn += 1
-        else:
-            self.turn += 2
-        my_id, possible_moves = self.record_or_not()
-
-        print("in play, my_id: ",my_id," filtered moves: ",possible_moves)
-
-        position = choice(possible_moves)
-
-        self.make_move(position, my_id)
-
-    def get_computer_positions(self):
+    def generate_possible_moves(self):
         send_list = []
 
         for coordinates in coordinates_into_XorO:
-            if coordinates_into_XorO[coordinates] == OPPONENT:
+            if not coordinates_into_XorO[coordinates]:
                 send_list.append(coordinates)
+        return  send_list
 
-        return send_list
-
-    def get_player_positions(self):
-        send_list = []
-        for coordinates in coordinates_into_XorO:
-            if coordinates_into_XorO[coordinates] == PLAYER:
-                send_list.append(coordinates)
-
-        return send_list
-
-    def generate_possible_moves(self,json=coordinates_into_XorO):
-        send_list = []
-
-        for coordinates in json:
-            if not json[coordinates]:
-                send_list.append(coordinates)
-
-        return send_list
-
-    def generate_id(self,json):
-        id = ""
-
-        id += str(json["turn"])
-
-        for c in json["computer's positions"]:
-            for each in c:
-                id += str(each)
-
-        for p in json["player's positions"]:
-            for each in p:
-                id += str(each)
-
-        return id
-
-    def record_or_not(self):
-        send_json = {
-            "turn": self.turn,
-            "computer's positions": self.get_computer_positions(),
-            "player's positions": self.get_player_positions(),
-            "possible moves": self.position_filter(self.generate_possible_moves())
-        }
-
-        self.get_moves()
-
-        new_id = self.generate_id(send_json)
-
-        self.moves_which_i_did = {}
-
-        if not new_id in self.moves.keys():
-            self.moves[new_id] = send_json
-
-            with open('moves.json', 'w') as f:
-                json.dump(self.moves, f, indent=4, separators=None)
-            self.moves_which_i_did[new_id] = []
-
-            return (new_id, send_json["possible moves"])
-        else:
-            self.moves_which_i_did[new_id] = []
-            if self.moves[new_id]["possible moves"]:
-                return (new_id, self.moves[new_id]["possible moves"])
-            else:
-                return (new_id, send_json["possible moves"])
-
-    def make_move(self, position, my_id):
+    def make_move(self, position):
         position = (position[0],position[1])
         place_box(screen,position,OPPONENT)
 
-        self.moves_which_i_did[my_id].append(position)
+    def minimax(self, test_env,isMaximizing):
 
-    def lost(self):
-        # Punish
-        self.get_moves()
+        result = check(test_env)
 
-        for move_id in self.moves_which_i_did:
-            move = self.moves_which_i_did[move_id][0]
-            print("Moves_which_i_did",self.moves_which_i_did)
-            move = [move[0],move[1]]
+        if result:
+            if OPPONENT in result:
+                return 1
+            elif PLAYER in result:
+                return -1
+            elif "Draw" in result:
+                return 0
 
-            self.moves[move_id]['possible moves'].remove(move)
-            print("remove: ",move_id,move)
+        if isMaximizing:
+            bestScore = -800
+            for coordinates in test_env.keys():
+                if test_env[coordinates] == None:
+                    test_env[coordinates] = OPPONENT
+                    score = self.minimax(test_env,False)
+                    test_env[coordinates] = None
+                    if score > bestScore:
+                        bestScore = score
+            return bestScore
 
-        self.set_moves()
+        else:
+            bestScore = 800
+            for coordinates in test_env.keys():
+                if test_env[coordinates] == None:
+                    test_env[coordinates] = PLAYER
+                    score = self.minimax(test_env, True)
+                    test_env[coordinates] = None
+                    if (score < bestScore):
+                        bestScore = score
+            return bestScore
 
-    def win(self):
-        # Reward
-        self.get_moves()
+    def play(self):
+        bestScore = -800
+        bestMove = 0
 
-        for move_id in self.moves_which_i_did:
-            move = self.moves_which_i_did[move_id]
-            print("Moves_which_i_did", self.moves_which_i_did)
-            move = [move[0], move[1]]
+        possible_moves = self.generate_possible_moves()
+        test_env = dict(coordinates_into_XorO)
 
-            self.moves[move_id]['possible moves'].append(move)
-            print("add: ",move_id, move)
+        for coordinates in possible_moves:
+            test_env[coordinates] = OPPONENT
+            score = self.minimax(test_env, False)
+            test_env[coordinates] = None
+            if (score > bestScore):
+                bestScore = score
+                bestMove = coordinates
 
-        self.set_moves()
+        self.make_move(bestMove)
+        return
 
 ########################################################################################################################
 ####################################################### Flow ###########################################################
@@ -428,10 +329,8 @@ def game():
         if result:
             if PLAYER in result:
                 show_text(screen, f"        {result}         ", (300, 50), GREEN, 33)
-                computer.lost()
             elif OPPONENT in result:
                 show_text(screen, f"        {result}         ", (300, 50), RED, 33)
-                computer.win()
             else:
                 show_text(screen, f"        {result}         ", (300, 50), BLACK, 33)
 
