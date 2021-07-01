@@ -24,7 +24,7 @@ If you choose X, you have to start the game and AI makes move then.
 
 You make move by clicking empty spot at the board.
 
-# How AI works
+# How does AI works
 I am using Minimax algorithm, which is the best in 2v2 games.
 
 This algorithm calculates all the possible moves and sorts them from the worst to the best, when choose the best one, but it's making that dynamically,
