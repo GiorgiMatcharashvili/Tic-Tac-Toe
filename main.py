@@ -1,7 +1,5 @@
-import json
 import time
 import pygame
-from random import choice
 from random import random
 
 ########################################################################################################################
@@ -152,14 +150,6 @@ def interact(coordinates):
 ########################################################################################################################
 
 class AI:
-    def generate_possible_moves(self):
-        send_list = []
-
-        for coordinates in coordinates_into_XorO:
-            if not coordinates_into_XorO[coordinates]:
-                send_list.append(coordinates)
-        return  send_list
-
     def make_move(self, position):
         position = (position[0],position[1])
         place_box(screen,position,OPPONENT)
@@ -204,16 +194,16 @@ class AI:
         bestScore = -800
         bestMove = 0
 
-        possible_moves = self.generate_possible_moves()
         test_env = dict(coordinates_into_XorO)
 
-        for coordinates in possible_moves:
-            test_env[coordinates] = OPPONENT
-            score = self.minimax(test_env, -800, 800, False)
-            test_env[coordinates] = None
-            if (score > bestScore):
-                bestScore = score
-                bestMove = coordinates
+        for coordinates in coordinates_into_XorO:
+            if coordinates_into_XorO[coordinates] == None:
+                test_env[coordinates] = OPPONENT
+                score = self.minimax(test_env, -800, 800, False)
+                test_env[coordinates] = None
+                if (score > bestScore):
+                    bestScore = score
+                    bestMove = coordinates
 
         self.make_move(bestMove)
         return
@@ -323,7 +313,7 @@ def game():
                             if is_placed: plays = OPPONENT
 
         elif plays == OPPONENT:
-            time.sleep(1)
+            time.sleep(random())
             plays = PLAYER
             computer.play()
 
