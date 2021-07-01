@@ -164,7 +164,7 @@ class AI:
         position = (position[0],position[1])
         place_box(screen,position,OPPONENT)
 
-    def minimax(self, test_env,isMaximizing):
+    def minimax(self, test_env, alpha, beta,isMaximizing):
 
         result = check(test_env)
 
@@ -181,10 +181,11 @@ class AI:
             for coordinates in test_env.keys():
                 if test_env[coordinates] == None:
                     test_env[coordinates] = OPPONENT
-                    score = self.minimax(test_env,False)
+                    score = self.minimax(test_env, alpha, beta,False)
                     test_env[coordinates] = None
-                    if score > bestScore:
-                        bestScore = score
+                    bestScore = max(bestScore,score)
+                    alpha = max(alpha,score)
+                    if beta <= alpha:break
             return bestScore
 
         else:
@@ -192,10 +193,11 @@ class AI:
             for coordinates in test_env.keys():
                 if test_env[coordinates] == None:
                     test_env[coordinates] = PLAYER
-                    score = self.minimax(test_env, True)
+                    score = self.minimax(test_env, alpha, beta, True)
                     test_env[coordinates] = None
-                    if (score < bestScore):
-                        bestScore = score
+                    bestScore = min(bestScore,score)
+                    beta = min(beta,score)
+                    if beta <= alpha: break
             return bestScore
 
     def play(self):
@@ -207,7 +209,7 @@ class AI:
 
         for coordinates in possible_moves:
             test_env[coordinates] = OPPONENT
-            score = self.minimax(test_env, False)
+            score = self.minimax(test_env, -800, 800, False)
             test_env[coordinates] = None
             if (score > bestScore):
                 bestScore = score
